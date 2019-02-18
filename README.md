@@ -28,6 +28,7 @@ We provide a script for evaluating a model's predictions. These predictions must
 There are several example files provided here: ``bert_preds.txt``, ``decomp_attn_heur_preds.txt``, ``spinn_preds_heur.txt``, and ``esim_heur_preds.txt``.
 
 To evaluate a file formatted in this way, simply run:
+
 ``python evaluate_heur_output.py FILENAME``
 
 This will give you results broken down at three levels of granularity. 
