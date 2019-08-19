@@ -36,6 +36,10 @@ This will give you results broken down at three levels of granularity.
 - Second, it will give accuracies for all 30 subcases of the heuristics (e.g. subject/object swap, NP/S, etc.)
 - Finally, it will give accuracies for each template
 
+## License:
+
+This repository is licensed under an [MIT License](https://github.com/tommccoy1/hans/blob/master/LICENSE.md). 
+
 
 
 
