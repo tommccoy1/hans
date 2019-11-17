@@ -3,7 +3,7 @@ This repository contains the HANS (Heuristic Analysis for NLI Systems) dataset.
 
 ## Data:
 
-The file ``heuristics_evaluation_set.txt`` contains HANS evaluation set introduced in our paper, [Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference](https://arxiv.org/abs/1902.01007). This file is formatted similarly to the MNLI release, so if your system is trained on MNLI you may be able to feed this file directly into your system. Otherwise, you may need to reformat the data to fit your system's input format. 
+The file ``heuristics_evaluation_set.txt`` contains the HANS evaluation set introduced in our paper, [Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference](https://arxiv.org/abs/1902.01007). This file is formatted similarly to the MNLI release, so if your system is trained on MNLI you may be able to feed this file directly into your system. Otherwise, you may need to reformat the data to fit your system's input format. 
 
 The fields in this file are:
 - ``gold_label``: The correct label for this sentence pair (either ``entailment`` or ``non-entailment``)
