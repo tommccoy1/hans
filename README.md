@@ -3,7 +3,7 @@ This repository contains the HANS (Heuristic Analysis for NLI Systems) dataset.
 
 ## Data:
 
-The file ``heuristics_evaluation_set.txt`` contains the set of examples used in our paper, [Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference](https://arxiv.org/abs/1902.01007). This file is formatted similarly to the MNLI release, so if your system is trained on MNLI you may be able to feed this file directly into your system. Otherwise, you may need to reformat the data to fit your system's input format. 
+The file ``heuristics_evaluation_set.txt`` contains HANS evaluation set introduced in our paper, [Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference](https://arxiv.org/abs/1902.01007). This file is formatted similarly to the MNLI release, so if your system is trained on MNLI you may be able to feed this file directly into your system. Otherwise, you may need to reformat the data to fit your system's input format. 
 
 The fields in this file are:
 - ``gold_label``: The correct label for this sentence pair (either ``entailment`` or ``non-entailment``)
@@ -17,6 +17,8 @@ The fields in this file are:
 - ``heuristic``: The heuristic that this example is targeting (``lexical_overlap``, ``subsequence``, or ``constituent``)
 - ``subcase``: The subcase of the heuristic that is being targeted; each heuristic has 10 subcases, described in the appendix to the paper
 - ``template``: The specific template that was used to generate this pair (most of the subcases have multiple templates; e.g., for subcases depending on relative clauses, there might be one template for relative clauses modifying the subject, and another for relative clauses modifying the direct object). This template ID corresponds to the ID in ``templates.py``.
+
+The file ``heuristics_train_set.txt`` contains the set of HANS-like examples that were used for the data augmentation experiments in Section 7 of [the HANS paper](https://arxiv.org/pdf/1902.01007.pdf). This file is set up exactly like ``heuristics_evaluation_set.txt`` (i.e., it also contains 1000 examples from each of the 30 HANS subcases), but none of the specific examples that appear in ``heuristics_evaluation_set.txt`` appear in ``heuristics_train_set.txt``, so that ``heuristics_train_set.txt`` can be used for data augmentation during training while still preserving the validity of ``heuristics_evaluation_set.txt`` as an evaluation set (e.g., in the paper we trained models on the union of ``heuristics_train_set.txt`` and the MNLI training set, and then evaluated on ``heuristics_evaluation_set.txt``).
 
 ## Evaluation:
 
