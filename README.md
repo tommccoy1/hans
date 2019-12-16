@@ -38,6 +38,10 @@ This will give you results broken down at three levels of granularity.
 - Second, it will give accuracies for all 30 subcases of the heuristics (e.g. subject/object swap, NP/S, etc.)
 - Finally, it will give accuracies for each template
 
+## Finding contradicting examples
+
+The file [mnli_contradicting_examples](https://github.com/tommccoy1/hans/blob/master/mnli_contradicting_examples) contains a list of the examples in the MNLI training set that contradict the heuristics targeted by HANS. For the scripts that we used to find these examples, see the folder [heuristic_finder_scripts](https://github.com/tommccoy1/hans/tree/master/heuristic_finder_scripts).
+
 ## License:
 
 This repository is licensed under an [MIT License](https://github.com/tommccoy1/hans/blob/master/LICENSE.md). 

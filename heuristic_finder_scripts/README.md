@@ -1,3 +1,7 @@
+# Finding examples that contradict the heuristics
+
+This directory contains scripts for finding examples in the MNLI training set which contradict the heuristics targeted by HANS. The `lex_finder.py` script was used to generate the file [mnli_contradicting_examples](https://github.com/tommccoy1/hans/blob/master/mnli_contradicting_examples).
+
 
 How to use these scripts with MNLI:
 
