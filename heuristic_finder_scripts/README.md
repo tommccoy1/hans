@@ -20,9 +20,9 @@ To look for examples of the constituent heuristic, run:
 python const_finder.py
 
 Each of these scripts will first print out all examples from
-multinli_1.0_train.txt that could potentially follow the heuristic. At the
-end, the script then prints out a summary of how many of these examples were
-entailment, contradiction, or neutral. These numbers should match the table
+multinli_1.0_train.txt that contradict the heuristic. At the
+end, the script then prints out a summary of how many examples which could potentially relate to the heuristic were
+entailment, contradiction, or neutral (where the ones that contradict the heuristic are ones with labels of contradiction or neutral). These numbers should match the table
 near the start of Section 2 of the HANS paper
 (https://arxiv.org/pdf/1902.01007.pdf).
 
