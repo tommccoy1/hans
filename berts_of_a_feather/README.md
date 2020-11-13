@@ -22,6 +22,16 @@ The file ``mnli_development_set_number_of_correct_response.txt`` shows, for each
 
 
 
+## Replicating
+git clone https://github.com/google-research/bert.git ## Clone BERT
+cd bert/
+git checkout 88a817c # Probably not necessary...but ensures you are using the same version of the BERT git that we are
+create a file named download_glue_data.py and copy this script into it: https://gist.github.com/W4ngatang/60c2bdb54d156a41194446737ce03e2e
+python download_glue_data.py --data_dir glue_data --tasks MNLI # make sure using Python 3
+cd glue_data
+mkdir HANS
+cd HANS
+copy test_matched.tsv from this git repo into the folder HEUR
 
 
  
