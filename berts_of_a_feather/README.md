@@ -15,11 +15,11 @@ In both of these files, each line lists the predictions made by each of our 100 
 
 ## Number of correct response
 
-The file ``mnli_development_set_number_of_correct_response.txt`` shows, for each example in the MNLI development set, the number of BERT instances (out of 100) that got that example right.
+The file ``mnli_development_set_number_of_correct_response.txt`` shows, for each example in the MNLI development set, the number of BERT instances (out of 100) that got that example right. This file includes the premises and hypotheses from the MNLI dataset introduced in the paper [A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference](https://www.aclweb.org/anthology/N18-1101/) by Adina Williams, Nikita Nangia, and Samuel Bowman; please see that paper for license details for the MNLI dataset.
 
 ## Model weights
 
-
+See Zenodo repository. Warning: Each of these zip files takes up about 1.1 GB of memory.
 
 
 ## Replicating
@@ -32,7 +32,8 @@ cd glue_data
 mkdir HANS
 cd HANS
 copy test_matched.tsv from this git repo into the folder HEUR
-
+Download one of the BERT zip files from the Zenodo repository (e.g., bert_0.zip) and move it into the directory bert
+unzip bert_0.zip
 
  
 
