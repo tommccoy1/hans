@@ -43,7 +43,7 @@ unzip bert_0.zip # creates a folder called bert_0_weights
  
 ## Citing
 
-If you use code or data from this folder, please cite our [paper](https://www.aclweb.org/anthology/2020.blackboxnlp-1.21) (BibTex can be found [here](https://www.aclweb.org/anthology/2020.blackboxnlp-1.21.bib).
+If you use code or data from this folder, please cite our [paper](https://www.aclweb.org/anthology/2020.blackboxnlp-1.21) (BibTex can be found [here](https://www.aclweb.org/anthology/2020.blackboxnlp-1.21.bib)).
 
 
 
