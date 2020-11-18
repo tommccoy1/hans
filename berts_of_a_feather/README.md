@@ -1,5 +1,5 @@
 # BERTs of a feather
-This folder contains data accompanying the paper [BERTs of a feather do not generalize together: Large variability in generalization across models with similar test set performance](https://arxiv.org/pdf/1911.02969.pdf), in which we analyzed how 100 instances of BERT fine-tuned on MNLI varied in their performance on the MNLI development set and on the HANS evaluation set.
+This folder contains data accompanying the paper [BERTs of a feather do not generalize together: Large variability in generalization across models with similar test set performance](https://www.aclweb.org/anthology/2020.blackboxnlp-1.21.pdf), in which we analyzed how 100 instances of BERT fine-tuned on MNLI varied in their performance on the MNLI development set and on the HANS evaluation set.
 
 ## Accuracies by model
 
@@ -19,10 +19,15 @@ The file ``mnli_development_set_number_of_correct_response.txt`` shows, for each
 
 ## Model weights
 
-See Zenodo repository. Warning: Each of these zip files takes up about 1.1 GB of memory.
+The weights for our 100 fine-tuned instances of BERT will be released on Zenodo soon. Warning: Each of these zip files takes up about 1.1 GB of memory.
 
 
 ## Replicating
+
+This section is under construction; it will be finalized once the model weights are done being uploaded to Zenodo.
+
+
+```
 git clone https://github.com/google-research/bert.git ## Clone BERT
 cd bert/
 git checkout 88a817c # Probably not necessary...but ensures you are using the same version of the BERT git that we are
@@ -33,7 +38,12 @@ mkdir HANS
 cd HANS
 copy test_matched.tsv from this git repo into the folder HEUR
 Download one of the BERT zip files from the Zenodo repository (e.g., bert_0.zip) and move it into the directory bert
-unzip bert_0.zip
-
+unzip bert_0.zip # creates a folder called bert_0_weights
+```
  
+## Citing
+
+If you use code or data from this folder, please cite our [paper](https://www.aclweb.org/anthology/2020.blackboxnlp-1.21) (BibTex can be found [here](https://www.aclweb.org/anthology/2020.blackboxnlp-1.21.bib).
+
+
 

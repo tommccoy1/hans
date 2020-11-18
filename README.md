@@ -47,7 +47,9 @@ The file [mnli_contradicting_examples](https://github.com/tommccoy1/hans/blob/ma
 This repository is licensed under an [MIT License](https://github.com/tommccoy1/hans/blob/master/LICENSE.md). 
 
 
+## Citing
 
+If you use data from this repository, please cite our [paper](https://www.aclweb.org/anthology/P19-1334/) (BibTex [here](https://www.aclweb.org/anthology/P19-1334.bib)).
 
 
  
