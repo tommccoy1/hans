@@ -97,7 +97,7 @@ python prediction_script_maker.py
 chmod +x predict*sh
 ``` 
 
-12. The previous step should have created 100 prediction scripts, e.g. `predict_47.sh`. Run the prediction script(s) for the model number(s) that you downloaded in step 9:
+12. The previous step should have created 100 prediction scripts, e.g. `predict_47.sh`. Run the prediction script(s) for the model number(s) that you downloaded in step 9. To run this script, you will need to have TensorFlow installed - see [Google's BERT GitHub repo](https://github.com/google-research/bert) for more information on running BERT.
 
 ```
 bash predict_47.sh
