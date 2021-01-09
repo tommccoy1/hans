@@ -77,7 +77,7 @@ mv dev_matched.tsv test_matched.tsv
 cd ../../
 ```
 
-9. For each BERT instance that you want to run, download the corresponding zip file from the [Zenodo repository](https://zenodo.org/record/4110593#.X_lj3-lKjGJ) into the foler bert/. You can use the download links from the Zenodo page, or you can use a download link as in the following example for BERT instance 47 (just replace `47` with whichever index you want). Be warned that each of these zip files takes up about 1.2 GB.
+9. For each BERT instance that you want to run, download the corresponding zip file from the [Zenodo repository](https://zenodo.org/record/4110593#.X_lj3-lKjGJ) into the folder `bert/`. You can use the download links from the Zenodo page, or you can use a download link as in the following example for BERT instance 47 (just replace `47` with whichever index you want). Be warned that each of these zip files takes up about 1.2 GB.
 
 ```
 wget https://zenodo.org/record/4110593/files/bert_47.zip?download=1
