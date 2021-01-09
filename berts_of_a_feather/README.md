@@ -80,7 +80,7 @@ cd ../../
 9. For each BERT instance that you want to run, download the corresponding zip file from the [Zenodo repository](https://zenodo.org/record/4110593#.X_lj3-lKjGJ) into the folder `bert/`. You can use the download links from the Zenodo page, or you can use a command line command as in the following example for BERT instance 47 (just replace `47` with whichever index you want). Be warned that each of these zip files takes up about 1.2 GB.
 
 ```
-wget https://zenodo.org/record/4110593/files/bert_47.zip?download=1
+wget https://zenodo.org/record/4110593/files/bert_47.zip
 ```
 
 10. Unzip the weight file(s) that you downloaded in the previous step:
@@ -94,6 +94,7 @@ unzip bert_47.zip
 ```
 cp ../files_for_replication/prediction_script_maker.py .
 python prediction_script_maker.py
+chmod +x predict*sh
 ``` 
 
 12. The previous step should have created 100 prediction scripts, e.g. `predict_47.sh`. Run the prediction script(s) for the model number(s) that you downloaded in step 9:
