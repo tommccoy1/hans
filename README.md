@@ -20,6 +20,8 @@ The fields in this file are:
 
 The file ``heuristics_train_set.txt`` contains the set of HANS-like examples that were used for the data augmentation experiments in Section 7 of [the HANS paper](https://arxiv.org/pdf/1902.01007.pdf). This file is set up exactly like ``heuristics_evaluation_set.txt`` (i.e., it also contains 1000 examples from each of the 30 HANS subcases), but none of the specific examples that appear in ``heuristics_evaluation_set.txt`` appear in ``heuristics_train_set.txt``, so that ``heuristics_train_set.txt`` can be used for data augmentation during training while still preserving the validity of ``heuristics_evaluation_set.txt`` as an evaluation set (e.g., in the paper we trained models on the union of ``heuristics_train_set.txt`` and the MNLI training set, and then evaluated on ``heuristics_evaluation_set.txt``).
 
+The training set and evaluation set are also both include as JSON lines files, with the ``.jsonl`` extension.
+
 ## Evaluation:
 
 We provide a script for evaluating a model's predictions. These predictions must be formatted in a text file with the following properties:
